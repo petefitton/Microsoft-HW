@@ -1,0 +1,101 @@
+
+@media screen and (min-width: 540px) and (max-width: 1084px) {
+    .largeImg {
+        width: 800px;
+        height: 331px;
+    }
+
+    .firstRowImgDivContainer, .secondRowImgDivContainer {
+        max-width: 600px;
+        min-height: 715px;
+        padding: 14 20 0 20;
+        /* might need wrap or some kind of flex change*/
+        flex-wrap: wrap;
+    }
+    /*want to make the images flex to two per line instead of all four 
+    resize the container that has the images*/
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 540px) {
+    .largeImg {
+        /* width: 800px;
+        height: 331px; */
+    }
+    .firstRowImgDivContainer {
+        /* max-width: 600px;
+        min-height: 715px;
+        padding: 14 20 0 20; */
+        flex-wrap: wrap;
+    }
+    /*want to make the images flex to two per line instead of all four 
+    resize the container that has the images*/
+}
+
+
+
+* {
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    width: 1050px;
+    height: 54px;
+    display: flex;
+}
+
+.leftHeadDiv {
+    display: flex;
+    width: 600px;
+    height: 54px;
+    margin: 0 0;
+}
+
+.rightHeadDiv {
+    display: flex;
+    width: 450px;
+    height: 54px;
+    justify-content: flex-end;
+    margin: 0 0;
+    float: right;
+}
+
+.smallHeadRightDivs, .smallHeadLeftDivs {
+    display: flex;
+    margin: 2px 8px;
+}
+
+.topText {
+    position: relative;
+    top: 15px;
+}
+
+.topText:hover {
+    text-decoration: underline;
+}
+
+.firstRowImgDivContainer, .secondRowImgDivContainer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 58px;
+    width: 1037px;
+    height: 375px;
+}
+
+.firstRowImg, .secondRowImg {
+    width: 241px;
+    height: 153px;
+}
+
+.firstRowImgDiv, .secondRowImgDiv {
+    width: 241px;
+    height: 353px;
+    padding: 12px;
+}
+
+footer {
+    margin: 40px auto;
+    float: left;
+    padding: 57px;
+}
