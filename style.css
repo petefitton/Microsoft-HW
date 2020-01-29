@@ -1,39 +1,3 @@
-
-@media screen and (min-width: 540px) and (max-width: 1084px) {
-    .largeImg {
-        width: 800px;
-        height: 331px;
-    }
-
-    .firstRowImgDivContainer, .secondRowImgDivContainer {
-        max-width: 600px;
-        min-height: 715px;
-        padding: 14 20 0 20;
-        /* might need wrap or some kind of flex change*/
-        flex-wrap: wrap;
-    }
-    /*want to make the images flex to two per line instead of all four 
-    resize the container that has the images*/
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 540px) {
-    .largeImg {
-        /* width: 800px;
-        height: 331px; */
-    }
-    .firstRowImgDivContainer {
-        /* max-width: 600px;
-        min-height: 715px;
-        padding: 14 20 0 20; */
-        flex-wrap: wrap;
-    }
-    /*want to make the images flex to two per line instead of all four 
-    resize the container that has the images*/
-}
-
-
-
 * {
     margin: 0 auto;
     text-align: center;
@@ -98,4 +62,66 @@ footer {
     margin: 40px auto;
     float: left;
     padding: 57px;
+}
+
+@media screen and (min-width: 540px) and (max-width: 1084px) {
+    .largeImg {
+        width: 900px;
+        height: 331px;
+    }
+
+    header {
+        max-width: 900px;
+    }
+
+    .leftHeadDiv {
+        max-width: 550px;
+    }
+    
+    .rightHeadDiv {
+        max-width: 350px;
+    }
+
+    .firstRowImgDivContainer, .secondRowImgDivContainer {
+        max-width: 600px;
+        min-height: 715px;
+        padding: 14 20 0 20;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 540px) {
+    .largeImg {
+        width: 500px;
+        height: 285px;
+    }
+
+    header {
+        max-width: 500px;
+    }
+
+    .leftHeadDiv {
+        max-width: 300px;
+    }
+    
+    .rightHeadDiv {
+        max-width: 200px;
+    }
+
+    .firstRowImgDivContainer, .secondRowImgDivContainer {
+        max-width: 416px;
+        min-height: 1500px;
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+
+    .topText {
+        display: none;
+    }
+
+    .headMainImg {
+        margin-left: auto;
+    }
+    
 }
