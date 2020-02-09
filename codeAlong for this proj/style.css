@@ -1,0 +1,53 @@
+* {
+    margin: 0 auto;
+}
+
+div {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+#container {
+    width: 1300px;
+}
+
+.row {
+    display: flex;
+    align-content: center;
+}
+
+#menu {
+    align-items: center;
+}
+
+#logoImg img {
+    height: 120px;
+}
+
+.textLink:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+#menuSpace {
+    width: 150px;
+}
+
+.searchIcon::after {
+    content: " +";
+}
+
+.blankRow {
+    height: 40px;
+}
+
+.descText {
+    width: 278px;
+}
+
+@media screen and (max-width: 1000px) {
+    .searchIcon {
+        display: none;
+    }
+}
